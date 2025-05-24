@@ -7,7 +7,7 @@ Includes preprocessing, KMeans clustering, visualizations (boxplots, t-SNE), and
 
 ## 🚀 Demo Online
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://amazon-insights.streamlit.app)
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)]([https://amazon-insights.streamlit.app](https://amazon-insight-wapp.streamlit.app))
 
 ---
 
