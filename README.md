@@ -1,81 +1,83 @@
-🛍️ Amazon Insights App
-An interactive Streamlit app to explore, cluster, and generate smart recommendations on Amazon products.
+# 🛍️ Amazon Insights App
+
+An interactive Streamlit app to explore, cluster, and generate smart recommendations on Amazon products.  
 Includes preprocessing, KMeans clustering, visualizations (boxplots, t-SNE), and a data-driven suggestion system for sellers.
 
-🚀 Demo Online
+---
 
+## 🚀 Demo Online
 
-📁 Project Structure
-bash
-Copia
-Modifica
+[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://amazon-insights.streamlit.app)
+
+---
+
+## 📁 Project Structure
+
 amazon_insights_app/
 ├── dataset/
-│   ├── amazon.csv              # Original raw dataset
-│   └── amazon_clean.csv        # Cleaned dataset (preprocessed)
-│   └── amazon_clustered.csv    # Clustered dataset
+│ ├── amazon.csv # Original raw dataset
+│ ├── amazon_clean.csv # Cleaned dataset
+│ └── amazon_clustered.csv # Clustered dataset
 ├── models/
-│   └── kmeans_model.pkl        # Trained KMeans model
+│ └── kmeans_model.pkl # Trained KMeans model
 ├── notebooks/
-│   ├── preprocessing.ipynb     # Notebook for data cleaning
-│   └── cluster.ipynb           # Exploratory clustering analysis
+│ ├── preprocessing.ipynb # Data cleaning and transformation
+│ └── cluster.ipynb # Clustering analysis and t-SNE
 ├── pages/
-│   ├── 1_Descrizione.py        # Dataset overview and visualizations
-│   ├── Clustering.py         # Cluster analysis and t-SNE
-│   └── Raccomandazioni.py    # Smart recommendation system
-├── requirements.txt
-└── app.py                      # Main Streamlit app entry point
-📦 Dataset Info
-The dataset includes reviews and details about Amazon products:
+│ ├── 1_Descrizione.py # Data overview and stats
+│ ├── 2_Clustering.py # Cluster visualizations
+│ └── 3_Raccomandazioni.py # Interactive recommendation system
+├── app.py # Main Streamlit app entry point
+└── requirements.txt
 
-Product details (name, price, discount)
 
-Ratings and reviews
+---
 
-Categories and links
+## 📦 Dataset Info
 
-Cleaned and enriched for ML usage
+The dataset contains real Amazon product information:
 
-📊 Features
-Data Overview: Preview raw data, visualize price distribution and category ratings.
+- Product name, price (actual/discounted), discount percentage
+- Ratings and number of reviews
+- Product category and description
+- Image and purchase links
 
-Clustering: Automatically group products using KMeans based on price, rating, and discount.
+---
 
-Visualizations: Interactive boxplots and t-SNE projections.
+## 📊 Features
 
-Recommendation Engine: Suggest categories/products to new sellers based on entered features.
+- **🧾 Data Overview**: Preview data, inspect basic stats, plot price distributions.
+- **🤖 Clustering**: Group products by pricing, rating and discount using KMeans.
+- **📉 Visualizations**: Boxplots, category counts, t-SNE plots for dimensionality reduction.
+- **📦 Recommendation Engine**: Suggest the best category and product example based on user input.
 
-⚙️ Setup Instructions
-Clone the repo:
+---
 
-bash
-Copia
-Modifica
-git clone https://github.com/your_username/amazon_insights_app.git
-cd amazon_insights_app
-Install dependencies:
+## ⚙️ Setup Instructions
 
-bash
-Copia
-Modifica
+1. **Clone the repo**:
+   ```bash
+   git clone https://github.com/your_username/amazon_insights_app.git
+   cd amazon_insights_app
+
+**Install dependencies**:
 pip install -r requirements.txt
-Run locally:
 
-bash
-Copia
-Modifica
+**Run the app**:
 streamlit run app.py
-🤖 Built With
-Python 🐍
 
-Pandas & NumPy
+🧠 **Built With**
+*Python* 🐍
+Streamlit – for building the interactive UI
+Pandas & NumPy – for data wrangling
+Scikit-Learn – for clustering and preprocessing
+Matplotlib & Seaborn – for beautiful charts
 
-Scikit-Learn (KMeans, t-SNE)
+👤 **Author**
+Developed with ❤️ by Dante Trabassi
+Feel free to open an issue or contribute via pull request!
 
-Seaborn & Matplotlib
 
-Streamlit
+---
 
-📬 Contact
-Developed by Dante Trabassi
-Feel free to open an issue or suggestion on GitHub!
+License MIT
